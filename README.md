@@ -1,4 +1,4 @@
-# Django Restful Project with Docker
+# Django Languages API
 
 ## Getting markdown styles
 - https://dillinger.io/
@@ -14,20 +14,6 @@ $ docker-compose run web django-admin.py startproject project .
 * Change the ownership of the new files
 ```sh
 $ sudo chown -R $user .
-```
-
-* Configure project/settings.py
-```
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'postgres',
-        'PORT': 5432,
-    }
-}
 ```
 
 * Run: *docker-compose up*
